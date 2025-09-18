@@ -1,5 +1,6 @@
-const prompt = require("prompt-sync")();
-const cetakNama = require("./coba.js");
+//const fs = require('fs');
+const coba = require(`./coba.js`);
+//const moment = require('moment');
 
-let nama = prompt("Masukkan nama: ");
-console.log(cetakNama(nama));
+console.log(coba.cetakNama(`Iqbal`), coba.PI, coba.mahasiswa.cetakNama());
+
