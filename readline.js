@@ -5,7 +5,14 @@ const rl=readln.createInterface({
 
 });
 
-rl.question ('Masukkan Nama Anda :',(nama)=>{
+/*rl.question ('Masukkan Nama Anda :',(nama)=>{
     console.log(`Terima Kasih ${nama}`);
     rl.close();
+})*/
+
+rl.question ('Masukkan Nama Anda :', (nama)=>{
+    rl.question('Masukkan No Hp :', (nohp)=> {
+        console.log(`Terima kasih ${nama}, sudah input ${nohp}`);
+        rl.close();
 })
+});
